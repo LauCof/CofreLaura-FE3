@@ -1,7 +1,7 @@
 import React from "react";
 import {Link} from 'react-router-dom'
 
-const Card = ({ item}) => {
+const Card = ({item}) => {
 const {user, username} = item
   const addFav = ()=>{
     // Aqui iria la logica para agregar la Card en el localStorage

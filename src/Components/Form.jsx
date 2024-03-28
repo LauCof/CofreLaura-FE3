@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const btnStyle = {backgroundColor: '#FDCA40'};
 
-const Form = () => {
+const Form = ({handleClick}) => {
   //Aqui deberan implementar el form completo con sus validaciones
   const [cliente, setCliente] = useState({
     nombre: '',
@@ -35,7 +35,7 @@ const handleSubmit = (event) => {
        <input type="text" onChange={(event) => setCliente({...cliente, nombre: event.target.value})}/>
        <label>Email:</label>
        <input type="text" onChange={(event) => setCustomer({...cliente, email: event.target.value})}/>
-       <button style={btnStyle}>Enviar</button>
+       <button style={btnStyle} onClick={handleClick}>Enviar</button>
     </form>
    }
   
